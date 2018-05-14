@@ -1,0 +1,30 @@
+{
+  "name": "medportal",
+  "version": "0.0.1",
+  "description": "medportal ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp",
+    "dist": "gulp --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenysHnatiuk/medportal.git"
+  },
+  "author": "GRADAZ",
+  "license": "SEE LICENSE IN license.txt",
+  "devDependencies": {
+    "autoprefixer": "^8.5.0",
+    "browser-sync": "^2.24.4",
+    "cssnano": "^3.10.0",
+    "graceful-fs": "^4.1.11",
+    "gulp": "^3.9.1",
+    "gulp-bower": "0.0.14",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "minimatch": "^3.0.4",
+    "wiredep": "^4.0.0"
+  },
+  "dependencies": {}
+}

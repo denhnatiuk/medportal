@@ -1,0 +1,277 @@
+html{
+  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
+// header
+.header{
+  font-size: 0.8889rem;
+  .container{
+    .navbar{
+      .navbar-header{
+        .navbar-toggle{}
+        .navbar-brand{
+          .brand-logo{}
+          .brand-name{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.333rem;
+            text-transform: uppercase;
+          }
+        }
+      }
+      .navbar-collapse{
+        .navbar-left{
+          .menu-item{
+            .menu-link{
+              font-family: "ProximaNova-Regular", Georgia, sans-serif;
+              font-size: 0.8889rem;
+              line-height: 1.333rem;
+            }
+            &.active{
+              .menu-link{
+                text-decoration: underline;
+                text-underline-position: under;
+              }
+            }
+          }
+        }
+        .navbar-right{
+          .btn-filled{
+
+          }
+          .navbar-form{
+            .input-group{
+              .form-control{}
+              .input-group-btn{
+                .btn-search{}
+              }
+            }
+          }
+          .btn-link{}
+        }
+      }
+    }
+  }
+}
+// index-slider
+.row.index-slider{
+  .container{
+    #indexSlider{
+      .carousel-indicators{}
+      .carousel-inner{
+        .item{
+          .slide-item-image{
+          }
+          .container{
+            .carousel-caption{
+              .slide-header{
+                text-transform: uppercase;
+                text-align: left;
+                font-size: 48px;
+                font-size: 2.685rem;
+              }
+              .slide-header-sub{
+                text-transform: uppercase;
+                text-align: left;
+                // font-size: 32px;
+                font-size: 1.666rem;
+              }
+              .slide-description{
+                font-family: 'ProximaNova-Semibold';
+                font-size: 20px;
+                line-height:27px;
+                text-align: left;
+              }
+              .btn-white{
+                font-size: 0.8889rem;
+                line-height: 1.333rem;
+              }
+              .slide-count{
+                font-size: 1rem;
+                line-height: 28px;
+                span{
+                  font-size: 30px;
+                  line-height: 28px;
+                  padding-right: 5px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .carousel-control{
+        position: absolute;
+        left:auto;
+        top:auto;
+        font-size: 2rem;
+        &.left{
+        }
+        &.right{
+        }
+      }
+    }
+  }
+}
+// index-about
+.row.index-about{
+  .container{
+    div{
+      .section-header{
+        font-family: 'ProximaNova-Semibold';
+        font-size: 38px;
+        line-height: 21px;
+      }
+      .img-wrapper{
+        .index-about--thumbnail{
+
+        }
+      }
+      .section-description{
+        font-family: 'ProximaNova-Light';
+        font-size: 1rem;
+        line-height: 1.666rem;
+      }
+      .btn-filled{
+        text-align: center;
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+      }
+      :after{
+      }
+
+    }
+  }
+}
+// index-program
+.row.index-program{
+  .container{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    div{
+      .section-description{
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+      }
+      .subheader{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 1.333rem;
+        line-height: 1.333rem;
+        text-transform: uppercase;
+      }
+      .program-thumbnail{}
+      .btn-filled{
+        text-align: center;
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+      }
+    }
+  }
+}
+// index-products
+.row.index-products{
+  .container{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    .products-wrapper{
+      .product-card{
+        .product-thumbnail{}
+        .overlay{
+          .btn-filled{
+            text-align: center;
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.333rem;
+            text-align: center;
+            &:hover{
+              text-decoration: none;
+            }
+          }
+        }
+        .product-header{
+          text-align: center;
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 1rem;
+          line-height: 1.333rem;
+          text-align: left;
+        }
+        .product-description{
+          text-align: center;
+          font-family: "ProximaNova-Light", Georgia, sans-serif;
+          font-size: 0.7778rem;
+          line-height: 1rem;
+          text-align: left;
+        }
+        .price{
+          text-align: center;
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 0.8889rem;
+          line-height: 1.333rem;
+          text-align: left;
+          .sale-price{
+            text-align: center;
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 1.122rem;
+            line-height: 1.333rem;
+            text-align: left;
+          }
+        }
+      }
+    }
+    .btn-filled{
+      text-align: center;
+      font-family: "ProximaNova-Regular", Georgia, sans-serif;
+      font-size: 0.8889rem;
+      line-height: 1.333rem;
+      text-align: center;
+    }
+  }
+}
+// index-review
+.row.index-review{
+  .container{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    div{
+      .review-item{
+        .avatar{}
+        .rate{
+          .glyphicon-star{}
+          .glyphicon-star-empty{}
+        }
+        .username{}
+        .date{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 0.8889rem;
+          line-height: 1.333rem;
+          text-align: left;
+        }
+        .comment{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 0.8889rem;
+          line-height: 1.450rem;
+          text-align: left;
+        }
+      }
+      .btn-filled{
+        text-align: center;
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+        text-align: center;
+      }
+    }
+  }
+}

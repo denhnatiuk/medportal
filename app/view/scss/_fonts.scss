@@ -1,0 +1,24 @@
+$proximaNova-ttf-collection: (
+  'Black',
+  'BlackIt',
+  'Bold',
+  'BoldIt',
+  'Extrabold',
+  'ExtraboldIt',
+  'Light',
+  'LightIt',
+  'Regular',
+  'RegularIt',
+  'Semibold',
+  'SemiboldIt',
+  'Thin',
+  'ThinIt'
+);
+@each $font in $proximaNova-ttf-collection {
+    @font-face {
+      font-family: 'ProximaNova-#{$font}';
+      src: url("/fonts/ProximaNova-#{$font}.ttf") format("truetype");
+      font-weight: normal;
+      font-style: normal;
+    }
+}

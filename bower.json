@@ -1,0 +1,23 @@
+{
+  "name": "medportal",
+  "version": "0.0.1",
+  "description": "medportal",
+  "main": "index.js",
+  "authors": [
+    "Den Hnatiuk"
+  ],
+  "license": "SEE LICENSE IN license.md",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/view/lib",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}

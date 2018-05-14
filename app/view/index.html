@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no,user-scalable=no">
+    <title></title>
+    <!--stylesheets-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link rel="icon" type="image/png" href="128.png" sizes="128x128">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">
+                <img src="./images/brand-logo.png" alt="Acme free clinic" class="brand-logo">
+                <span class="brand-name">ACNE FREE CLINIC</span>
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="mainMenu">
+              <ul class="nav navbar-nav navbar-left">
+                <li class="menu-item active"><a href="#" class="menu-link">Home</a></li>
+                <li class="menu-item "><a href="about.html" class="menu-link">About</a></li>
+                <li class="menu-item "><a href="program.html" class="menu-link">Online program</a></li>
+                <li class="menu-item "><a href="info.html" class="menu-link">Acne information</a></li>
+                <li class="menu-item "><a href="blog.html" class="menu-link">Blog</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a type="button" name="book appointment" class="btn-filled">Book appointment</a>
+                </li>
+                <li>
+                  <form class="navbar-form search-box" role="search">
+                    <div class="input-group searchform">
+                      <input type="text" id="s" class="form-control" placeholder="Search">
+                      <div class="close">
+                          <span class="front"></span>
+                          <span class="back"></span>
+                      </div>
+                      <!-- <span class="input-group-btn">
+                        <button type="submit" class="btn btn-search"><span class="glyphicon glyphicon-search"></span></button>
+                      </span> -->
+                    </div>
+                  </form>
+                </li>
+                <li><a href="#" class="btn-link">Shop</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid content">
+      <div class="row index-slider">
+        <div class="container">
+          <div id="indexSlider" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#indexSlider" data-slide-to="0" class=""></li>
+              <li data-target="#indexSlider" data-slide-to="1" class=""></li>
+              <li data-target="#indexSlider" data-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="item">
+                <img alt="First slide" src="./images/index-slider-1.png" class="slide-item-image">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2 class="slide-header">Holistic ACNE Program</h2>
+                    <span class="slide-header-sub">for all acne types with medical proven results</span>
+                    <p class="slide-description">We are helped thousands of people to get and stay clear with our revolutionary approach</p>
+                    <p><a class="btn btn-lg btn-white btn-arrow" href="#" role="button">Begin your journey to clear skin <span>&rarr;</span></a></p>
+                    <div class="slide-count">
+                      <span>01 / </span>03
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <img alt="Second slide" src="./images/index-slider-2.png" class="slide-item-image">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2 class="slide-header">Holistic ACNE Program</h2>
+                    <span class="slide-header-sub">for all acne types with medical proven results</span>
+                    <p class="slide-description">We are helped thousands of people to get and stay clear with our revolutionary approach</p>
+                    <p><a class="btn btn-lg btn-white btn-arrow" href="#" role="button">Begin your journey to clear skin <span>&rarr;</span></a></p>
+                    <div class="slide-count">
+                      <span>02 / </span>03
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item active">
+                <img alt="Third slide" src="./images/index-slider-3.png"  class="slide-item-image">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h2 class="slide-header">Holistic ACNE Program</h2>
+                    <span class="slide-header-sub">for all acne types with medical proven results</span>
+                    <p class="slide-description">We are helped thousands of people to get and stay clear with our revolutionary approach</p>
+                    <p><a class="btn btn-lg btn-white btn-arrow" href="#" role="button">Begin your journey to clear skin <span>&rarr;</span></a></p>
+                    <div class="slide-count">
+                      <span>03 / </span>03
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#indexSlider" data-slide="prev"><span class="">&larr;</span></a>
+            <a class="right carousel-control" href="#indexSlider" data-slide="next"><span class="">&rarr;</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="row index-about">
+        <div class="container">
+          <div class="col-xs-12 col-md-7">
+            <h2 class="section-header">About</h2>
+            <div class="img-wrapper">
+              <img src="./images/index-slider-1.png" alt="" class="index-about--thumbnail">
+            </div>
+            <p class="section-description">Do you suffer from acne and nothing is working for you? Tired from trying different products with minimum results, scared by drugs for acne?</p>
+            <p class="section-description">We want to help you find the answer. We willwork together using my Holistic Acnefree Program guiding you through 3-4 month of clearing process inside out, that has proven 90% success rate. You entire regimen will be done via Skype/Face time with acne consultation followed by weekly check-ins and routine strengthening until you are perfectly clear.</p>
+            <a href="#" class="btn-filled">read more</a>
+          </div>
+        </div>
+      </div>
+      <div class="row index-program">
+        <div class="container">
+          <h2 class="section-header">Online acne free program</h2>
+          <div class="col-xs-12 col-md-4 program-bg program-block">
+            <p class="section-description">Acne is a chronic hereditary disease that can be only controlled, but not cured. Our clearing program keeps your acne under control. With right combination of products, diet, supplements and lifestyle changes we can get and maintain your skin clear. Having right products is not enough to get your skin clear. It's all about right regimen for these products that is customized for your acne type by our certified acne specialist. We've been treating acne clients successfully who have tried everything else on a market and got frustrated with side effects of drugs and minimum results. You can be our next success story. Start your Acnefree online program today!</p>
+            <a href="/" class="btn-filled">Get started</a>
+          </div>
+          <div class="col-xs-12 col-md-4  program-block">
+            <h3 class="subheader">our mission</h3>
+            <p class="section-description">To educate you on how to get and stay clear in safe, effective, inexpensive way. To help millions of acne sufferers to be treated in the most successful manner with no harm to their health. To help you gain self-esteem and enjoy acne free life.</p>
+          </div>
+          <div class="col-xs-12 col-md-4 program-block">
+            <img src="./images/program-block-1.png" alt="" class="program-thumbnail">
+          </div>
+          <div class="col-xs-12 col-md-4 program-block">
+              <img src="./images/program-block-2.png" alt="" class="program-thumbnail">
+          </div>
+          <div class="col-xs-12 col-md-4 program-block">
+              <img src="./images/program-block-3.png" alt="" class="program-thumbnail">
+          </div>
+        </div>
+      </div>
+      <div class="row index-products">
+        <div class="container">
+          <h2 class="section-header">Products</h2>
+          <div class="products-wrapper">
+            <div class="product-card">
+              <div class="thumbnail-wrapper">
+                <img src="./images/product1.png" alt="" class="product-thumbnail">
+                <div class="overlay">
+                  <a href="#" class="btn-filled">ADD TO CART</a>
+                </div>
+              </div>
+              <h3 class="product-header">Ultra Gentle Cleanser</h3>
+              <p class="product-description">6 oz A mild & gentle, sulfate- and paraben-free cleansing gel. Excellent for the most sensitive skin types and safe for skin prone to eczema. It has been formulated to include several ingredients found to be beneficial to acneic skin such as green tea extract, licorice, and reishi. </p>
+              <span class="price">$ 35<span class="sale-price">$21</span></span>
+            </div>
+            <div class="product-card">
+              <div class="thumbnail-wrapper">
+                <img src="./images/product2.png" alt="" class="product-thumbnail">
+                <div class="overlay">
+                  <a href="#" class="btn-filled">ADD TO CART</a>
+                </div>
+              </div>
+              <h3 class="product-header">Antioxidant Scrub</h3>
+              <p class="product-description">6 oz A sulfate-free facial scrub good for non-sensitive skin types. The cellulose beads help exfoliate dead skin cells and allow treatment products and active ingredients work more effectively. It is ideal for anyone who needs a scrub, but is mature and/or has dry skin. It has been formulated to include several ingredients found to be beneficial to acneic skin such as green tea extract, licorice, and reishi</p>
+              <span class="price">$ 35<span class="sale-price">$21</span></span>
+            </div>
+            <div class="product-card">
+              <div class="thumbnail-wrapper">
+                <img src="./images/product3.png" alt="" class="product-thumbnail">
+                <div class="overlay">
+                  <a href="#" class="btn-filled">ADD TO CART</a>
+                </div>
+              </div>
+              <h3 class="product-header">Clove Hill Tinted Facial Mineral</h3>
+              <p class="product-description">6 oz A cleanser made with 2.5% benzoyl peroxide designed for use on skin prone to inflamed acne.  It should not be used to remove eye makeup.</p>
+              <span class="price">$ 35<span class="sale-price">$21</span></span>
+            </div>
+          </div>
+          <a href="#" class="btn-filled">MORE ITEMS</a>
+        </div>
+      </div>
+      <div class="row index-review">
+        <div class="container">
+          <h2 class="section-header">Product review</h2>
+          <div class="col-xs-12 col-md-6">
+            <div class="review-item">
+              <div class="img-wrapper">
+                <img src="./images/avatar1.png" alt="" class="avatar">
+              </div>
+              <div class="rate">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+              </div>
+              <div class="meta">
+                <h3 class="username">Anastasia Hold</h3>
+                <span class="date">20.01.2018</span>
+              </div>
+              <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <div class="review-item">
+              <div class="img-wrapper">
+                <img src="./images/avatar2.png" alt="" class="avatar">
+              </div>
+              <div class="rate">
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star empty"></span>
+              </div>
+              <div class="meta">
+                <h3 class="username">Pauline Fox</h3>
+                <span class="date">10.01.2018</span>
+              </div>
+              <p class="comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12 btn-wrapper">
+            <a href="#" class="btn-filled">MORE REVIEWS</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+    </footer>
+    <!--scripts-->
+    <div class="scripts hidden invisible">
+      <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write("<script src='.\/js\/jquery.min.js'><\/script>");</script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+      <script>
+        // Bootstrap CDN Fallback
+          $.fn.modal || document.write('<script src=".\/lib\/bootstrap.min.js"><\/script>');
+      </script>
+      <script>
+          // Font-Awesome CDN Fallback
+          (function($){
+              var $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+              if ($span.css('fontFamily') !== 'FontAwesome' ) {
+                  // Fallback Link
+                  $('head').append('<link href="\/css\/font-awesome.min.css" rel="stylesheet">');
+              }
+              $span.remove();
+          })(jQuery);
+      </script>
+    </div>
+  </body>
+</html>

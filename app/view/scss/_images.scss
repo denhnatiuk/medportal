@@ -1,0 +1,103 @@
+// header
+.header{
+  .container{
+    .navbar{
+      .navbar-header{
+        .navbar-toggle{}
+        .navbar-brand{
+          .brand-logo{}
+          .brand-name{}
+        }
+      }
+      .navbar-collapse{
+        .navbar-left{
+          .menu-item{
+            .menu-link{}
+            &.active{
+              .menu-link{}
+            }
+          }
+        }
+        .navbar-right{
+          .btn-filled{}
+          .navbar-form{
+            .input-group{
+              .form-control{}
+              .input-group-btn{
+                .btn-search{}
+              }
+            }
+          }
+          .btn-link{}
+        }
+      }
+    }
+  }
+}
+// index-program
+.row.index-program{
+  .container{
+    .section-header{}
+    div{
+      .section-description{}
+      .subheader{}
+      .program-thumbnail{}
+      &.program-bg{
+        background: linear-gradient(
+      rgba(0, 158, 224, 0.5),
+      rgba(0, 158, 224, 0.5)
+    ), url(../images/program-bg.png);
+        background-size: 220%;
+        background-position: right;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+// index-products
+.row.index-products{
+  .container{
+    .section-header{
+
+    }
+    .products-wrapper{
+      .product-card{
+        .product-thumbnail{}
+        .overlay{
+          .btn-filled{}
+        }
+        .product-header{
+
+        }
+        .product-description{}
+        .price{
+          .sale-price{}
+        }
+      }
+    }
+    .btn-filled{
+
+    }
+  }
+}
+// index-review
+.row.index-review{
+  .container{
+    .section-header{}
+    div{
+      .review-item{
+        .avatar{}
+        .rate{
+          .glyphicon-star{}
+          .glyphicon-star-empty{}
+        }
+        .username{}
+        .date{}
+        .comment{}
+      }
+      .btn-filled{
+
+      }
+    }
+  }
+}

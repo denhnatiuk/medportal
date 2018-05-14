@@ -1,0 +1,85 @@
+// index-review
+.row.index-review{
+  .container{
+    .section-header{
+      padding-bottom: 20px;
+      width:280px;
+      // margin-bottom: 40px;
+    }
+    &>div{
+      margin-top: 115px;
+      .review-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 75px 30px 30px 30px;
+        &:hover .img-wrapper:before{
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+        }
+        .img-wrapper{
+          position: absolute;
+          top:-75px;
+          display: block;
+          width: 150px;
+          height:150px;
+          // margin-left: 30%;
+          border-radius: 50%;
+          overflow: hidden;
+          .avatar{
+            display: block;
+            margin-left: -40%;
+            height:150px;
+          }
+          &:before{
+            content: '';
+            width:150px;
+            height:150px;
+            z-index: 2;
+            position: absolute;
+            top:0;
+            bottom: 0;
+            // left:0;
+            // right:0;
+            border-radius: 50%;
+            opacity:0;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        .rate{
+          align-self: flex-start;
+          .glyphicon-star{}
+          .glyphicon-star.empty{}
+        }
+        .meta{
+          align-self: flex-start;
+          .username{
+            display: block;
+            width:auto;
+            float: left;
+          }
+          .date{
+            display: inline;
+            float: left;
+            margin: 1.4rem 1.2rem;
+          }
+        }
+        .comment{}
+      }
+    }
+    &>div.btn-wrapper{
+      position: relative;
+      margin: 2rem 50%;
+      .btn-filled{
+        position: relative;
+        display: block;
+        padding: 1rem 2rem;
+        margin:0 0 0 -125px;
+        border:0;
+        border-radius: 1.5rem;
+        width:250px;
+      }
+    }
+  }
+}
