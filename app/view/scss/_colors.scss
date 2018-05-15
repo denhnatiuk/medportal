@@ -301,3 +301,71 @@ $gray: #d9d9d9;
     }
   }
 }
+// footer
+.footer{
+  background-color: $light4;
+  color:#fff;
+  .container{
+    .footer-contacts{
+      .footer-header{}
+      .footer-contacts-list{
+        .footer-contacts-item{
+          span{}
+          .address{}
+        }
+      }
+      >span.copyright{}
+    }
+    .sidebar{
+      .footer-header{
+      }
+      .recent-posts-list{
+        .recent-posts-item{
+          .recent-posts-link{
+            color:#fff;
+            &:hover{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+            &:visited{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+            &focus{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .acne-resources{
+      .footer-header{}
+      .acne-resources-list{
+        .acne-resources-item{
+          .acne-resources-link{
+            color:#fff;
+            &:hover{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+            &:visited{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+            &focus{
+              color:#fff;
+              outline:none;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+  }
+}

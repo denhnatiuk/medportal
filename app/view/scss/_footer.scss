@@ -1,0 +1,113 @@
+// footer
+.footer{
+  .container{
+    position: relative;
+    #scrollTop{
+      display: none;
+      span{
+        display: none;
+      }
+    }
+    .footer-contacts{
+      .footer-header{}
+      .footer-contacts-list{
+        padding: 0;
+        list-style-type: none;
+        .footer-contacts-item{
+          span{}
+          .address{
+            margin:0;
+          }
+        }
+      }
+      >span.copyright{
+        display: block;
+        margin-top: 3rem;
+      }
+    }
+    .sidebar{
+      width:300px;
+      padding: 0;
+      margin:0 -15px;
+      .footer-header{
+      }
+      .recent-posts-list{
+        padding: 0;
+        list-style-type: none;
+        .recent-posts-item{
+          .recent-posts-link{}
+        }
+      }
+    }
+    .acne-resources{
+      .footer-header{}
+      .acne-resources-list{
+        padding: 0;
+        list-style-type: none;
+        .acne-resources-item{
+          .acne-resources-link{}
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  // footer
+  .footer{
+    .container{
+      position: relative;
+      #scrollTop{
+        position: absolute;
+        top:-1rem;
+        right:30px;
+        span{
+          display: block;
+          padding:0.5rem;
+          border-radius: 50%;
+          background-color: #eee;
+        }
+      }
+      .footer-contacts{
+        .footer-header{}
+        .footer-contacts-list{
+          padding: 0;
+          list-style-type: none;
+          .footer-contacts-item{
+            span{}
+            .address{
+              margin:0;
+            }
+          }
+        }
+        >span.copyright{
+          display: block;
+          margin-top: 3rem;
+        }
+      }
+      .sidebar{
+        width:300px;
+        padding: 0;
+        margin:0 -15px;
+        .footer-header{
+        }
+        .recent-posts-list{
+          padding: 0;
+          list-style-type: none;
+          .recent-posts-item{
+            .recent-posts-link{}
+          }
+        }
+      }
+      .acne-resources{
+        .footer-header{}
+        .acne-resources-list{
+          padding: 0;
+          list-style-type: none;
+          .acne-resources-item{
+            .acne-resources-link{}
+          }
+        }
+      }
+    }
+  }
+}

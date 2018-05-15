@@ -2,7 +2,7 @@
   .container{
     .navbar{
       height: 80px;
-      margin: 0;
+      margin: 0 -15px;
       .navbar-header{
         display: flex;
         flex-direction: row;
@@ -148,4 +148,210 @@
             }
         }
     }
+}
+@media screen and (max-width:768px){
+  .header{
+    .container{
+      .navbar{
+        height: auto;
+        margin: 0 -15px;
+        .navbar-header{
+          display: block;
+          height: auto;
+          .visible-xs.shop-link-xs{
+              display: block;
+              position: absolute;
+              right:0;
+              top:0;
+              width:100px;
+              height:50px;
+              padding-top: 25px;
+              text-align: center;
+          }
+          .navbar-toggle{
+            position: absolute;
+            right:0;
+            top:0;
+            z-index: 100;
+            background-color: inherit;
+            border:0;
+            &>.menu-icon{
+              width:20px;
+              height:20px;
+              &>svg{
+                transform-origin: 100%;
+                width:40px;
+                fill: #fff;
+                transition: all 0.3s ease-in-out;
+                &>.icon-bars__1{
+                  transform: rotate(45deg) translate(18px, -19px);
+                  transition: all 0.3s ease-in-out;
+                }
+                &>.icon-bars__2{
+                  display: none;
+                  transition: all 0.3s ease-in-out;
+                }
+                &>.icon-bars__3{
+                  transform: rotate(-45deg) translate(6px, 12px);
+                  transition: all 0.3s ease-in-out;
+                }
+              }
+            }
+            &.collapsed{
+              position: relative;
+              display: block;
+              float: left;
+              margin: 15px 0 15px 15px;
+              background-color: inherit;
+              border: 0;
+              right:auto;
+              top:auto;
+              &>.menu-icon{
+                width:20px;
+                height:20px;
+                &>svg{
+                  transform-origin: 100%;
+                  width:40px;
+                  fill:#6ec8ed;
+                  &>.icon-bars__1{
+                    transform: rotate(0);
+                    transition: all 0.3s ease-in-out;
+                  }
+                  &>.icon-bars__2{
+                    display: block;
+                    transition: all 0.3s ease-in-out;
+                  }
+                  &>.icon-bars__3{
+                    transform: rotate(0);
+                    transition: all 0.3s ease-in-out;
+                  }
+                }
+              }
+            }
+          }
+          .navbar-brand{
+            position: relative;
+            display: block;
+            padding: 0;
+            margin-top: 15px;
+            line-height: 2rem;
+            .brand-logo{
+              width:40px;
+              float: left;
+            }
+            .brand-name{}
+          }
+        }
+        .navbar-collapse{
+          position: absolute;
+          top:0;
+          padding-top: 50px;
+          left:15px;
+          width:100%;
+          background-color: #6ec8ed;
+          &.collapse.in{
+            position: absolute;
+            top:0;
+            padding-top: 50px;
+            left:15px;
+            width:100%;
+            .navbar-left{
+              display: block;
+              height: auto;
+              .menu-item{
+                text-align: center;
+                .menu-link{}
+                &.active{
+                  .menu-link{}
+                }
+              }
+            }
+            .navbar-right{
+              display: block;
+              height: auto;
+              .btn-filled{
+                display: block;
+                padding: 1rem 2rem;
+                margin:0.2rem 20%;
+                border:0;
+                border-radius: 1.5rem;
+              }
+              .navbar-form{
+                display: none;
+                .input-group{
+                  .form-control{
+                    width:0px;
+                  }
+                  .input-group-btn{
+                    .btn-search{}
+                  }
+                }
+              }
+              .shop-link{
+                display: none;
+              }
+              .visible-xs{
+                .address{
+                  color: #fff;
+                  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+                  font-size: 0.8889rem;
+                  line-height: 1.666rem;
+                  text-align: center;
+                  display: block;
+                  width:50%;
+                  margin-left: 25%;
+                  margin-top: 1rem;
+                  &:before{
+                    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";color:#009ee0;
+                  }
+                }
+                .tel{
+                  color: #fff;
+                  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+                  font-size: 0.8889rem;
+                  line-height: 1.666rem;
+                  text-align: center;
+                  display: block;
+                  width:50%;
+                  margin-left: 25%;
+                  &:before{
+                    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";color:#009ee0;
+                  }
+                }
+              }
+            }
+          }
+          .navbar-left{
+            display: block;
+            height: auto;
+            .menu-item{
+              text-align: center;
+              .menu-link{}
+              &.active{
+                .menu-link{}
+              }
+            }
+          }
+          .navbar-right{
+            display: block;
+            height: auto;
+            text-align: center;
+            .btn-filled{
+              display: block;
+              padding: 1rem 2rem;
+              margin:0.2rem 0;
+              border:0;
+              border-radius: 1.5rem;
+            }
+            .navbar-form{
+              display: none;
+            }
+            .shop-link{
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
 }

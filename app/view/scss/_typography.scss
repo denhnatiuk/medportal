@@ -266,7 +266,6 @@ html{
         }
       }
       .btn-filled{
-        text-align: center;
         font-family: "ProximaNova-Regular", Georgia, sans-serif;
         font-size: 0.8889rem;
         line-height: 1.333rem;
@@ -274,4 +273,62 @@ html{
       }
     }
   }
+}
+// footer
+.footer{
+  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+  font-size: 0.8889rem;
+  line-height: 1.666rem;
+  .container{
+    .footer-contacts{
+      .footer-header{}
+      .footer-contacts-list{
+        .footer-contacts-item{
+          span{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.666rem;
+          }
+          .address{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.666rem;
+          }
+        }
+      }
+      >span.copyright{
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.666rem;
+      }
+    }
+    .sidebar{
+      .footer-header{
+      }
+      .recent-posts-list{
+        .recent-posts-item{
+          .recent-posts-link{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            line-height: 1.666rem;
+          }
+        }
+      }
+    }
+    .acne-resouces{
+      .footer-header{}
+      .acne-resources-list{
+        .acne-resources-item{
+          .acne-resources-link{}
+        }
+      }
+    }
+  }
+}
+
+.footer-header{
+  text-transform: uppercase;
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 1.122rem;
+  line-height: 1.333rem;
 }

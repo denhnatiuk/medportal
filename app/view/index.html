@@ -7,7 +7,7 @@
     <title></title>
     <!--stylesheets-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
 
     <link rel="icon" type="image/png" href="128.png" sizes="128x128">
@@ -18,16 +18,21 @@
         <nav class="navbar navbar-default">
           <div class="container-fluid">
             <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
+              <button id='collapseTrigger' type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                <span class="menu-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 20" class="icon icon-bars">
+                      <rect class="icon-bars__1" x="1" y="1" width="19" height="3"/>
+                      <rect class="icon-bars__2" x="1" y="8" width="19" height="3"/>
+                      <rect class="icon-bars__3" x="1" y="15" width="19" height="3"/>
+                    </svg>
+                  </span>
               </button>
               <a class="navbar-brand" href="#">
                 <img src="./images/brand-logo.png" alt="Acme free clinic" class="brand-logo">
                 <span class="brand-name">ACNE FREE CLINIC</span>
               </a>
+              <a href="#" class="visible-xs shop-link-xs">Shop</a>
             </div>
             <div class="collapse navbar-collapse" id="mainMenu">
               <ul class="nav navbar-nav navbar-left">
@@ -55,7 +60,13 @@
                     </div>
                   </form>
                 </li>
-                <li><a href="#" class="btn-link">Shop</a></li>
+                <li><a href="#" class="btn-link shop-link">Shop</a></li>
+                <li class="visible-xs">
+                  <address class="address">
+                    500 North 21st street, apt 919, Philadelphia.
+                  </address>
+                  <a href="tel:+18135109892" class="tel">+18135109892</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -66,14 +77,9 @@
       <div class="row index-slider">
         <div class="container">
           <div id="indexSlider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#indexSlider" data-slide-to="0" class=""></li>
-              <li data-target="#indexSlider" data-slide-to="1" class=""></li>
-              <li data-target="#indexSlider" data-slide-to="2" class="active"></li>
-            </ol>
             <div class="carousel-inner">
               <div class="item">
-                <img alt="First slide" src="./images/index-slider-1.png" class="slide-item-image">
+                <img alt="First slide" src="./images/index-slider-3.png" class="slide-item-image">
                 <div class="container">
                   <div class="carousel-caption">
                     <h2 class="slide-header">Holistic ACNE Program</h2>
@@ -101,7 +107,7 @@
                 </div>
               </div>
               <div class="item active">
-                <img alt="Third slide" src="./images/index-slider-3.png"  class="slide-item-image">
+                <img alt="Third slide" src="./images/index-slider-1.png"  class="slide-item-image">
                 <div class="container">
                   <div class="carousel-caption">
                     <h2 class="slide-header">Holistic ACNE Program</h2>
@@ -178,7 +184,7 @@
                 </div>
               </div>
               <h3 class="product-header">Antioxidant Scrub</h3>
-              <p class="product-description">6 oz A sulfate-free facial scrub good for non-sensitive skin types. The cellulose beads help exfoliate dead skin cells and allow treatment products and active ingredients work more effectively. It is ideal for anyone who needs a scrub, but is mature and/or has dry skin. It has been formulated to include several ingredients found to be beneficial to acneic skin such as green tea extract, licorice, and reishi</p>
+              <p class="product-description">6 oz A sulfate-free facial scrub good for non-sensitive skin types. The cellulose beads help exfoliate dead skin cells and allow treatment products and active ingredients work more effectively. It is ideal for anyone who needs a scrub, but is mature and/or has dry skin.</p>
               <span class="price">$ 35<span class="sale-price">$21</span></span>
             </div>
             <div class="product-card">
@@ -243,13 +249,56 @@
         </div>
       </div>
     </div>
-    <footer>
+    <footer class="footer">
+      <div class="container">
+        <a id="scrollTop" href="#top"><span class="	glyphicon glyphicon-chevron-up"></span></a>
+        <div class="col-xs-12 col-md-2 footer-contacts">
+          <h3 class="footer-header">CONTACT US</h3>
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <span>Our office location:</span>
+              <address class="address">
+                500 North 21st street, apt 919, Philadelphia.
+              </address>
+            </li>
+            <li class="footer-contacts-item">
+              <span>Phone</span>
+              <span class="tel">+18135109892</span>
+            </li>
+          </ul>
+          <span class="copyright">Copyright &copy; 2018</span>
+        </div>
+        <div class="col-xs-12 col-xs-push-0 col-md-3 col-md-push-2 sidebar">
+          <h3 class="footer-header">Recent posts</h3>
+          <ul class="recent-posts-list">
+            <li class="recent-posts-item"><a href="#" class="recent-posts-link">Acne Triggers: What Is Causing My Acne?</a></li>
+            <li class="recent-posts-item"><a href="#" class="recent-posts-link">Supplements that can Cause Acne</a></li>
+            <li class="recent-posts-item"><a href="#" class="recent-posts-link">Selenium for Acne</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-xs-push-0 col-md-4 col-md-push-3 acne-resources">
+          <h3 class="footer-header">ACNE RESOURCES</h3>
+          <ul class="acne-resources-list">
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">10 Common Acne Myths</a></li>
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">Why You Shouldn`t Take Antibiotics To Treat Acne</a></li>
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">10 Tips For Getting Clear Skin</a></li>
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">Body Acne Treatments</a></li>
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">Does Proactive Treat Acne?</a></li>
+            <li class="acne-resources-item"><a href="#" class="acne-resources-link">What Is Acne?</a></li>
+          </ul>
+        </div>
+
+      </div>
     </footer>
     <!--scripts-->
     <div class="scripts hidden invisible">
       <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
       <script>window.jQuery || document.write("<script src='.\/js\/jquery.min.js'><\/script>");</script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="./js/index.slider.js" charset="utf-8" type="text/javascript"></script>
+      <script>
+
+      </script>
       <script>
         // Bootstrap CDN Fallback
           $.fn.modal || document.write('<script src=".\/lib\/bootstrap.min.js"><\/script>');
@@ -264,6 +313,29 @@
               }
               $span.remove();
           })(jQuery);
+      </script>
+      <script>
+      //================================================================================scroll top button
+      $(document).ready(function(){
+       // hide #back-top first
+       $("#scrollTop").hide();
+       // fade in #back-top
+       $(function () {
+         $(window).scroll(function () {
+           if ($(this).scrollTop() > 100) {
+             $('#scrollTop').fadeIn();
+           } else {
+             $('#scrollTop').fadeOut();
+           }
+         });
+         // scroll body to 0px on click
+         $('#scrollTop button').click(function () {
+           $('body,html').animate({
+             scrollTop: 0
+           }, 800);
+         });
+       });
+      });
       </script>
     </div>
   </body>

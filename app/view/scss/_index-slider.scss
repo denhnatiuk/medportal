@@ -1,7 +1,6 @@
 .row.index-slider{
   .container{
     #indexSlider{
-      .carousel-indicators{}
       .carousel-inner{
         .item{
           .slide-item-image{
@@ -27,6 +26,14 @@
                 display: block;
                 width: 300px;
                 border-radius: 1.2rem;
+                font-family: "ProximaNova-Regular", Georgia, sans-serif;
+                font-size: 0.8889rem;
+                line-height: 1.666rem;
+                span{
+                  font-family: sans;
+                  font-size: 1rem;
+                  line-height: 1rem;
+                }
               }
               .slide-count{
                 position:absolute;
@@ -63,4 +70,62 @@
       }
     }
   }
+}
+@media screen and (max-width:1200px){
+.row.index-slider{
+  .container{
+    #indexSlider{
+      z-index: -1;
+      margin-right: -15px;
+      .carousel-inner{
+        .item{
+          overflow-x:hidden;
+          .slide-item-image{
+            height:600px;
+            max-width:200%;
+            margin-right: -60%;
+          }
+          .container{
+            position: relative;
+            .carousel-caption{
+              position: absolute;
+              left: 0;
+              bottom: auto;
+              top:200px;
+              text-shadow: none;
+              width: 100%;
+              .slide-header{
+                max-width: 100%;
+                font-size: 22px;
+              }
+              .slide-header-sub{
+                display: none;
+              }
+              .slide-description{
+                max-width: 100%;
+                font-size: 16px;
+              }
+              .btn-white{
+                display: block;
+                width: 300px;
+                max-width: 100%;
+                border-radius: 1.2rem;
+              }
+              .slide-count{
+                display: none;
+                span{
+
+                }
+              }
+            }
+          }
+        }
+      }
+      .carousel-control{
+        display: none;
+
+      }
+    }
+  }
+}
 }

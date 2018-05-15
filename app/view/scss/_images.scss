@@ -101,3 +101,35 @@
     }
   }
 }
+// footer
+.footer{
+  .container{
+    .footer-contacts{
+      .footer-header{}
+      .footer-contacts-list{
+        .footer-contacts-item{
+          span{}
+          .address{}
+        }
+      }
+      >span.copyright{}
+    }
+    .sidebar{
+      .footer-header{
+        .recent-posts-list{
+          .recent-posts-item{
+            .recent-posts-link{}
+          }
+        }
+      }
+    }
+    .acne-resouces{
+      .footer-header{}
+      .acne-resources-list{
+        .acne-resources-item{
+          .acne-resources-link{}
+        }
+      }
+    }
+  }
+}

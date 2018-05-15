@@ -46,6 +46,13 @@
         padding: 0;
         &.program-bg{
           height: 560px;
+          background: linear-gradient(
+                        rgba(0, 158, 224, 0.5),
+                        rgba(0, 158, 224, 0.5)
+                      ), url(../images/program-bg.png);
+          background-size: 250%;
+          background-position: right -50px top;
+          background-repeat: no-repeat;
         }
         .section-description{
           padding: 15px 30px;
@@ -67,6 +74,13 @@
           border:0;
           border-radius: 1.5rem;
           width:250px;
+        }
+        &:nth-child(4){
+          margin:0 -15px;
+          overflow: visible;
+          & .program-thumbnail{
+            width:110%;
+          }
         }
         &:nth-child(5){
           display: none;

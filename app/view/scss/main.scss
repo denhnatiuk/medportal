@@ -2,6 +2,10 @@
 @import "typography";
 @import "colors";
 @import "images";
+.content{
+  overflow-x: hidden;
+  width:100%;
+}
 // index
 @import "header";
 @import "index-slider";
@@ -9,3 +13,4 @@
 @import "index-program";
 @import "index-products";
 @import "index-review";
+@import "footer";
