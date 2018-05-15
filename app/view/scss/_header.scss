@@ -249,6 +249,7 @@
           left:15px;
           width:100%;
           background-color: #6ec8ed;
+          z-index: 2;
           &.collapse.in{
             position: absolute;
             top:0;

@@ -87,6 +87,16 @@ html {
   font-size: 18px;
   line-height: 21px; }
 
+p.text {
+  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 1.333rem; }
+
+p.bold {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 1.333rem; }
+
 .header {
   font-size: 0.8889rem; }
   .header .container .navbar .navbar-header .navbar-brand .brand-name {
@@ -273,6 +283,64 @@ html {
   font-size: 1.122rem;
   line-height: 1.333rem; }
 
+.row.hero-header .container .page-title {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 2.17rem;
+  line-height: 1.333rem; }
+
+.row.hero-header .container .page-title-sub {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 1.17rem;
+  line-height: 1.333rem; }
+
+.row.main-content .container .section-header {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 2.17rem;
+  line-height: 1.333rem; }
+
+.row.mission .section-header {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 2.17rem;
+  line-height: 1.333rem; }
+
+.row.mission .text-list {
+  list-style-type: none; }
+  .row.mission .text-list .text-list-item {
+    text-indent: -1.2rem; }
+    .row.mission .text-list .text-list-item:before {
+      content: '-';
+      display: inline-block;
+      float: left;
+      margin-right: 1rem; }
+
+.row.win-story .container .section-header {
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 2.17rem;
+  line-height: 1.333rem; }
+
+@media screen and (max-width: 1200px) {
+  .row.hero-header .container .page-title {
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 1.222rem;
+    line-height: 1.333rem;
+    text-transform: uppercase; }
+  .row.hero-header .container .page-title-sub {
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 0.8889rem;
+    line-height: 1.333rem; }
+  .row.main-content .container .section-header {
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 1.222rem;
+    line-height: 1.333rem; }
+  .row.mission .section-header {
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 1.222rem;
+    line-height: 1.333rem; }
+  .row.win-story .container .section-header {
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 1.222rem;
+    line-height: 1.333rem; } }
+
 .header .container .navbar {
   background-color: inherit;
   border: 0; }
@@ -436,6 +504,77 @@ html {
       color: #fff;
       outline: none;
       cursor: pointer; }
+
+.row.hero-header .container .page-title {
+  color: #fff; }
+
+.row.hero-header .container .page-title-sub {
+  color: #fff; }
+
+.row.main-content .container .img-wrapper.left-image:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -40px;
+  left: -40px;
+  z-index: -1;
+  background-color: #eee; }
+
+.row.main-content .container .img-wrapper.right-image:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  z-index: -1;
+  background-color: #c0e2f5; }
+
+.row.win-story .container .img-wrapper.right-image:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  top: 30%;
+  right: -80%;
+  z-index: -1;
+  background-color: #c0e2f5; }
+
+@media screen and (max-width: 1200px) {
+  .row.main-content .container .img-wrapper.left-image:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: -1;
+    background-color: #eee; }
+  .row.main-content .container .img-wrapper.right-image:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 40px;
+    right: -40px;
+    z-index: -1;
+    background-color: #c0e2f5; }
+  .row.win-story .container .img-wrapper.right-image:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    right: -80%;
+    z-index: -1;
+    background-color: #c0e2f5; } }
 
 .row.index-program .container div.program-bg {
   background: linear-gradient(rgba(0, 158, 224, 0.5), rgba(0, 158, 224, 0.5)), url(../images/program-bg.png);
@@ -639,7 +778,8 @@ html {
       padding-top: 50px;
       left: 15px;
       width: 100%;
-      background-color: #6ec8ed; }
+      background-color: #6ec8ed;
+      z-index: 2; }
       .header .container .navbar .navbar-collapse.collapse.in {
         position: absolute;
         top: 0;
@@ -1178,3 +1318,135 @@ html {
     .footer .container .acne-resources .acne-resources-list {
       padding: 0;
       list-style-type: none; } }
+
+.row.hero-header {
+  margin-bottom: 80px;
+  position: relative; }
+  .row.hero-header .container {
+    position: relative;
+    height: 500px;
+    padding-top: 10%; }
+    .row.hero-header .container .hero-bg {
+      position: absolute;
+      display: block;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      height: 500px; }
+    .row.hero-header .container .page-title {
+      border-top: 2px solid #eee;
+      width: 110px;
+      padding-top: 22px;
+      padding-bottom: 10px; }
+    .row.hero-header .container .page-title-sub {
+      display: block; }
+
+.row.main-content {
+  position: relative;
+  margin-bottom: 80px; }
+  .row.main-content .container {
+    position: relative; }
+    .row.main-content .container .section-header {
+      margin-left: 15px;
+      margin-bottom: 2rem; }
+      .row.main-content .container .section-header span {
+        position: relative;
+        display: block;
+        margin-top: 20px; }
+    .row.main-content .container .img-wrapper.left-image {
+      position: absolute;
+      top: 50px;
+      left: 0; }
+    .row.main-content .container .img-wrapper.right-image {
+      position: absolute;
+      top: 100px;
+      right: 0; }
+
+.row.mission {
+  position: relative;
+  margin-bottom: 80px; }
+  .row.mission .section-header {
+    margin-left: 15px;
+    margin-bottom: 2rem; }
+
+.row.win-story {
+  position: relative;
+  margin-bottom: 80px; }
+  .row.win-story .container {
+    position: relative; }
+    .row.win-story .container .section-header {
+      margin-left: 15px;
+      margin-bottom: 2rem; }
+    .row.win-story .container .img-wrapper.right-image {
+      position: absolute;
+      top: 0;
+      right: 150px; }
+
+@media screen and (max-width: 1200px) {
+  .row.hero-header {
+    margin-bottom: 30px;
+    position: relative; }
+    .row.hero-header .container {
+      position: relative;
+      height: 500px;
+      padding-top: 30%; }
+      .row.hero-header .container .hero-bg {
+        position: absolute;
+        display: block;
+        right: -100%;
+        top: 0;
+        z-index: -1;
+        height: 500px; }
+      .row.hero-header .container .page-title {
+        border-top: 2px solid #eee;
+        width: 75px;
+        padding-top: 16px;
+        padding-bottom: 10px;
+        z-index: 1; }
+      .row.hero-header .container .page-title-sub {
+        display: block;
+        z-index: 1; }
+  .row.main-content {
+    position: relative;
+    margin-bottom: 30px; }
+    .row.main-content .container {
+      position: relative; }
+      .row.main-content .container .section-header {
+        margin-left: 15px;
+        margin-bottom: 2rem; }
+        .row.main-content .container .section-header span {
+          position: relative;
+          display: block;
+          margin-top: 20px; }
+      .row.main-content .container .img-wrapper.left-image {
+        position: relative;
+        top: 0;
+        left: 45px;
+        margin-top: 50px; }
+        .row.main-content .container .img-wrapper.left-image .page-thumbnail {
+          max-width: 200%; }
+      .row.main-content .container .img-wrapper.right-image {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin-bottom: 50px; }
+        .row.main-content .container .img-wrapper.right-image .page-thumbnail {
+          max-width: 100%; }
+  .row.mission {
+    position: relative;
+    margin-bottom: 30px; }
+    .row.mission .section-header {
+      margin-left: 15px;
+      margin-bottom: 2rem; }
+  .row.win-story {
+    position: relative;
+    margin-bottom: 30px; }
+    .row.win-story .container {
+      position: relative; }
+      .row.win-story .container .section-header {
+        margin-left: 15px;
+        margin-bottom: 2rem; }
+      .row.win-story .container .img-wrapper.right-image {
+        position: relative;
+        top: 0;
+        right: 0; } }

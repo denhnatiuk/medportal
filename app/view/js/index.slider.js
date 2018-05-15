@@ -13,4 +13,24 @@ var w = window,
       interval: 60000
     });
   }
-// =============================================================footer scrollTop btn
+  //================================================================================scroll top button
+  $(document).ready(function(){
+   // hide #back-top first
+   $("#scrollTop").hide();
+   // fade in #back-top
+   $(function () {
+     $(window).scroll(function () {
+       if ($(this).scrollTop() > 100) {
+         $('#scrollTop').fadeIn();
+       } else {
+         $('#scrollTop').fadeOut();
+       }
+     });
+     // scroll body to 0px on click
+     $('#scrollTop button').click(function () {
+       $('body,html').animate({
+         scrollTop: 0
+       }, 800);
+     });
+   });
+  });

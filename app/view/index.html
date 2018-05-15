@@ -287,55 +287,26 @@
             <li class="acne-resources-item"><a href="#" class="acne-resources-link">What Is Acne?</a></li>
           </ul>
         </div>
-
       </div>
     </footer>
     <!--scripts-->
     <div class="scripts hidden invisible">
       <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
-      <script>window.jQuery || document.write("<script src='.\/js\/jquery.min.js'><\/script>");</script>
+      <script>window.jQuery || document.write("<script src='.\/lib\/jquery\/dist\/jquery.min.js'><\/script>");</script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-        <script src="./js/index.slider.js" charset="utf-8" type="text/javascript"></script>
+      <script src="./js/index.slider.js" charset="utf-8" type="text/javascript"></script>
       <script>
-
-      </script>
-      <script>
-        // Bootstrap CDN Fallback
-          $.fn.modal || document.write('<script src=".\/lib\/bootstrap.min.js"><\/script>');
-      </script>
-      <script>
+          // Bootstrap CDN Fallback
+          // $.fn.modal || document.write('<script src=".\/lib\/bootstrap.min.js"><\/script>');
           // Font-Awesome CDN Fallback
-          (function($){
-              var $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
-              if ($span.css('fontFamily') !== 'FontAwesome' ) {
-                  // Fallback Link
-                  $('head').append('<link href="\/css\/font-awesome.min.css" rel="stylesheet">');
-              }
-              $span.remove();
-          })(jQuery);
-      </script>
-      <script>
-      //================================================================================scroll top button
-      $(document).ready(function(){
-       // hide #back-top first
-       $("#scrollTop").hide();
-       // fade in #back-top
-       $(function () {
-         $(window).scroll(function () {
-           if ($(this).scrollTop() > 100) {
-             $('#scrollTop').fadeIn();
-           } else {
-             $('#scrollTop').fadeOut();
-           }
-         });
-         // scroll body to 0px on click
-         $('#scrollTop button').click(function () {
-           $('body,html').animate({
-             scrollTop: 0
-           }, 800);
-         });
-       });
-      });
+          // (function($){
+          //     var $span = $('<span class="fa" style="display:none"></span>').appendTo('body');
+          //     if ($span.css('fontFamily') !== 'FontAwesome' ) {
+          //         // Fallback Link
+          //         $('head').append('<link href="\/css\/font-awesome.min.css" rel="stylesheet">');
+          //     }
+          //     $span.remove();
+          // })(jQuery);
       </script>
     </div>
   </body>

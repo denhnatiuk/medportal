@@ -369,3 +369,157 @@ $gray: #d9d9d9;
     }
   }
 }
+// page about
+.row.hero-header{
+  .container{
+    .hero-bg{}
+    .page-title{
+      color:#fff;
+    }
+    .page-title-sub{
+      color:#fff;
+    }
+  }
+}
+.row.main-content{
+  .container{
+    .section-header{}
+    .section-header-sub{}
+    .img-wrapper{
+      &.left-image{
+        &:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height:100%;
+          position: absolute;
+          top:-40px;
+          left:-40px;
+          z-index: -1;
+          background-color: #eee;
+        }
+      }
+      &.right-image{
+        &:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height:100%;
+          position: absolute;
+          top:-40px;
+          right:-40px;
+          z-index: -1;
+          background-color: $light;
+        }
+      }
+      .page-thumbnail{}
+    }
+  }
+}
+.row.mission{
+
+  .section-header{}
+  .text-list{
+    .text-list-item{
+      &:before{}
+    }
+  }
+}
+.row.win-story{
+  .container{
+    .img-wrapper{
+      &.right-image{
+        &:after{
+          content: '';
+          display: block;
+          width: 100%;
+          height:50%;
+          position: absolute;
+          top:30%;
+          right:-80%;
+          z-index: -1;
+          background-color: $light;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  .row.hero-header{
+    .container{
+      .hero-bg{
+      }
+      .page-title{
+      }
+      .page-title-sub{
+      }
+    }
+  }
+  .row.main-content{
+    .container{
+      .section-header{}
+      .section-header-sub{
+      }
+      .img-wrapper{
+
+        &.left-image{
+          &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:-40px;
+            left:-40px;
+            z-index: -1;
+            background-color: #eee;
+          }
+        }
+        &.right-image{
+          &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:40px;
+            right:-40px;
+            z-index: -1;
+            background-color: $light;
+          }
+        }
+        .page-thumbnail{
+        }
+      }
+    }
+  }
+  .row.mission{
+    .section-header{}
+    .text-list{
+      .text-list-item{
+        &:before{}
+      }
+    }
+  }
+  .row.win-story{
+    .container{
+      .img-wrapper{
+        &:after{}
+        &.right-image{
+          &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height:50%;
+            position: absolute;
+            top:30%;
+            right:-80%;
+            z-index: -1;
+            background-color: $light;
+          }
+        }
+      }
+    }
+  }
+}
+//  END page about

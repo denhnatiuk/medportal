@@ -3,6 +3,16 @@ html{
   font-size: 18px;
   line-height: 21px;
 }
+p.text{
+  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
+p.bold{
+  font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+  font-size: 1rem;
+  line-height: 1.333rem;
+}
 // header
 .header{
   font-size: 0.8889rem;
@@ -332,3 +342,142 @@ html{
   font-size: 1.122rem;
   line-height: 1.333rem;
 }
+// page about
+.row.hero-header{
+  .container{
+    .hero-bg{    }
+    .page-title{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    .page-title-sub{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 1.17rem;
+      line-height: 1.333rem;
+    }
+  }
+}
+.row.main-content{
+  .container{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    .img-wrapper{
+      &.left-image{
+
+      }
+      &.right-image{
+
+      }
+      .page-thumbnail{
+      }
+    }
+  }
+}
+.row.mission{
+  .section-header{
+    font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+    font-size: 2.17rem;
+    line-height: 1.333rem;
+  }
+  .text-list{
+    list-style-type: none;
+    .text-list-item{
+      text-indent: -1.2rem;
+      &:before{
+        content:'-';
+        display: inline-block;
+        float: left;
+        margin-right: 1rem;
+
+      }
+    }
+  }
+}
+.row.win-story{
+  .container{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 2.17rem;
+      line-height: 1.333rem;
+    }
+    .img-wrapper{
+      &.right-image{}
+    }
+  }
+}
+@media screen and (max-width:1200px) {
+  .row.hero-header{
+    .container{
+      .hero-bg{
+      }
+      .page-title{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 1.222rem;
+        line-height: 1.333rem;
+        text-transform: uppercase;
+      }
+      .page-title-sub{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 0.8889rem;
+        line-height: 1.333rem;
+      }
+    }
+  }
+  .row.main-content{
+    .container{
+      .section-header{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 1.222rem;
+        line-height: 1.333rem;
+      }
+      .section-header-sub{
+      }
+      .img-wrapper{
+
+        &.left-image{
+          &:after{
+          }
+        }
+        &.right-image{
+          &:after{
+          }
+        }
+        .page-thumbnail{
+        }
+      }
+    }
+  }
+  .row.mission{
+    .section-header{
+      font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+      font-size: 1.222rem;
+      line-height: 1.333rem;
+    }
+    .text-list{
+      .text-list-item{
+        &:before{}
+      }
+    }
+  }
+  .row.win-story{
+    .container{
+      .section-header{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 1.222rem;
+        line-height: 1.333rem;
+      }
+      .img-wrapper{
+        &:after{}
+        &.right-image{
+          &:after{
+          }
+        }
+      }
+    }
+  }
+}
+//  END page about

@@ -133,3 +133,60 @@
     }
   }
 }
+// page about
+.row.hero-header{
+
+  .container{
+
+    .hero-bg{
+
+    }
+    .page-title{
+
+    }
+    .page-title-sub{
+
+    }
+  }
+}
+.row.main-content{
+
+  .container{
+
+    .section-header{}
+    .section-header-sub{
+
+    }
+    .img-wrapper{
+      &.left-image{
+
+      }
+      &.right-image{
+
+      }
+      .page-thumbnail{
+      }
+    }
+  }
+}
+.row.mission{
+
+  .section-header{}
+  .text-list{
+    .text-list-item{
+      &:before{}
+    }
+  }
+}
+.row.win-story{
+
+  .container{
+
+    .img-wrapper{
+      &.right-image{
+
+      }
+    }
+  }
+}
+//  END page about
