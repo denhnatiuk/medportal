@@ -80,14 +80,14 @@
           }
         }
         >span.copyright{
+          position: absolute;
+          bottom: -300px;
           display: block;
           margin-top: 3rem;
         }
       }
       .sidebar{
-        width:300px;
-        padding: 0;
-        margin:0 -15px;
+        display: none;
         .footer-header{
         }
         .recent-posts-list{
@@ -99,6 +99,7 @@
         }
       }
       .acne-resources{
+        padding-bottom:100px;
         .footer-header{}
         .acne-resources-list{
           padding: 0;

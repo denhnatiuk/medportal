@@ -3,6 +3,11 @@ html{
   font-size: 18px;
   line-height: 21px;
 }
+body{
+  font-family: "ProximaNova-Regular", Georgia, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+}
 p.text{
   font-family: "ProximaNova-Regular", Georgia, sans-serif;
   font-size: 1rem;
@@ -115,6 +120,9 @@ p.bold{
         left:auto;
         top:auto;
         font-size: 2rem;
+        & span{
+          font-family: sans-serif;
+        }
         &.left{
         }
         &.right{
@@ -481,3 +489,225 @@ p.bold{
   }
 }
 //  END page about
+// page blog (category)
+.row.hero-header{
+  .container{
+    .hero-bg{}
+    .page-title{}
+    .page-title-sub{}
+  }
+}
+.row{
+  .container{
+    .main{
+      article.post{
+        .article-header{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 1rem;
+          line-height: 1.666rem;
+          .meta{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 1rem;
+            line-height: 1.666rem;
+          }
+        }
+        p.excerpt{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 0.7778rem;
+          line-height: 1.666rem;
+        }
+        .article-link{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 1rem;
+          line-height: 1.666rem;
+          span{
+            font-family: sans-serif;
+          }
+        }
+      }
+    }
+    .primary-sidebar{
+      aside#search-2{
+        form.search-form{
+          label{
+            .screen-reader-text{}
+            input.search-field{}
+          }
+          input.search-submit{}
+        }
+      }
+      aside#categories{
+        .widget-title{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 1.333rem;
+          line-height: 1.666rem;
+        }
+        .cat-list{
+          font-family: "ProximaNova-Light", Georgia, sans-serif;
+          font-size: 0.889rem;
+          line-height: 1.333rem;
+          list-style-type: none;
+          .cat-item{
+            .count{}
+          }
+        }
+      }
+      aside#recent-posts-2{
+        .widget-title{
+          font-family: "ProximaNova-Regular", Georgia, sans-serif;
+          font-size: 1.333rem;
+          line-height: 1.666rem;
+        }
+        ul{
+          li{
+            a{
+              img{}
+              .post-title{
+                font-family: "ProximaNova-Light", Georgia, sans-serif;
+                font-size: 0.889rem;
+                line-height: 1.333rem;
+                list-style-type: none;
+              }
+              .meta{
+                font-family: "ProximaNova-Light", Georgia, sans-serif;
+                font-size: 0.889rem;
+                line-height: 1.333rem;
+                list-style-type: none;
+              }
+              &:hover{
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END page blog (category)
+
+// single-blog
+.row{
+  position: relative;
+  margin-bottom: 30px;
+  .container{
+    article.blog-post{
+      .row{
+        .section-header{
+          font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+          font-size: 2.17rem;
+          line-height: 1.333rem;
+          span{
+
+          }
+        }
+        .img-wrapper{
+          &.left-image{
+          }
+          &.right-image{
+          }
+          .page-thumbnail{
+          }
+        }
+        div{
+          p.text{}
+          p.bold{}
+        }
+        .right-text-blog{
+          .section-header{
+          }
+          .text-list{
+            list-style-type: none;
+            .text-list-item{
+              &:before{
+                content:'';
+                display: block;
+                float: left;
+                width:1rem;
+                margin-top: 0.7rem;
+                margin-right: 1rem;
+                margin-left: -2rem;
+                border-bottom: 2px solid #88d1f1;
+              }
+            }
+          }
+        }
+      }
+    }
+    blockquote{
+      text-align: center;
+      &:before{
+        content:'“';
+        display: inline;
+        font-family: "ProximaNova-Light", Georgia, sans-serif;
+        font-style: italic;
+        font-size: 4rem;
+        line-height: 1.558rem;
+        transform: translateY(0.2rem);
+        float: left;
+        margin-right: 2rem;
+      }
+      &:after{
+        // content:',,';
+        content:'”';
+        display: inline-block;
+        font-family: "ProximaNova-Light", Georgia, sans-serif;
+        font-size: 4rem;
+        line-height: 0rem;
+        font-style: italic;
+        transform: translateY(2.333rem);
+        margin-left: 3rem;
+      }
+      span.italic{
+        font-family: "ProximaNova-Regular", Georgia, sans-serif;
+        font-size: 1rem;
+        line-height: 1.666rem;
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .row{
+    .container{
+      article.blog-post{
+        .row{
+          .section-header{
+            font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+            font-size: 1.222rem;
+            line-height: 1.333rem;
+          }
+          .img-wrapper{
+            &.left-image{
+              .post-thumbnail{
+              }
+            }
+            &.right-image{
+              .post-thumbnail{
+              }
+            }
+          }
+          div{
+            p.text{}
+            p.bold{}
+          }
+          .right-text-blog{
+            .section-header{
+              font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+              font-size: 1.222rem;
+              line-height: 1.333rem;
+            }
+            .text-list{}
+          }
+        }
+      }
+      blockquote{
+        font-style: italic;
+        span.italic{
+          font-style: italic;
+
+        }
+      }
+    }
+  }
+}
+// END page single-blog

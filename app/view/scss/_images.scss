@@ -190,3 +190,56 @@
   }
 }
 //  END page about
+// page blog (category)
+.row.hero-header{
+  .container{
+    .hero-bg{}
+    .page-title{}
+    .page-title-sub{}
+  }
+}
+.row{
+  .container{
+    .main{
+      article.post{}
+      .article-header{}
+      .meta{}
+      p.excerpt{}
+      .article-link{}
+    }
+    .primary-sidebar{
+      aside#search-2{
+        form.search-form{
+          label{
+            .screen-reader-text{}
+            input.search-field{}
+          }
+          input.search-submit{}
+        }
+      }
+      aside#categories{
+        .widget-title{
+          .cat-list{
+            .cat-item{
+              .count{}
+            }
+          }
+        }
+      }
+      aside#recent-posts-2{
+        .widget-title{
+          ul{
+            li{
+              a{
+                img{}
+                .post-title{}
+                .meta{}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END page blog (category)

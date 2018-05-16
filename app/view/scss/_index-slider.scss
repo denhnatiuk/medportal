@@ -18,9 +18,13 @@
               .slide-header-sub{
                 display: block;
                 max-width: 70%;
+                font-size: 1.6rem;
+                line-height: 1.866rem;
+                margin-bottom: 15px;
               }
               .slide-description{
                 max-width: 70%;
+                margin-bottom: 15px;
               }
               .btn-white{
                 display: block;
@@ -61,11 +65,11 @@
         width:10%;
         &.left{
           right:12%;
-          bottom:-1%;
+          bottom:1%;
         }
         &.right{
           right:-1%;
-          bottom:-1%;
+          bottom:1%;
         }
       }
     }

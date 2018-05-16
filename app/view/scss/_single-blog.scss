@@ -1,0 +1,121 @@
+// single-blog
+.row{
+  position: relative;
+  margin-bottom: 30px;
+  .container{
+    article.blog-post{
+      .row{
+        .section-header{
+          margin-left: 15px;
+          margin-bottom: 2rem;
+          span{
+            position: relative;
+            display: block;
+            margin-top: 20px;
+          }
+        }
+        .img-wrapper{
+          &.left-image{
+            position: absolute;
+            top:30px;
+            left:-100%;
+            width:100%;
+            // float: right;
+            overflow: visible;
+            .post-thumbnail{
+              display: block;
+              float: right;
+            }
+          }
+          &.right-image{
+            position: absolute;
+            top:100px;
+            right:0;
+          }
+          .page-thumbnail{
+          }
+        }
+        div{
+          p.text{}
+          p.bold{}
+        }
+        .right-text-blog{
+          .section-header{
+            margin-left: 0;
+          }
+          .text-list{}
+        }
+      }
+    }
+    blockquote{
+      margin-top: 70px;
+      border:0;
+      p.italic{}
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .row{
+    .container{
+      article.blog-post{
+        .row{
+          .section-header{}
+          .img-wrapper{
+            &.left-image{
+              position: relative;
+              top:0;
+              left:0;
+              margin-left: -15px;
+              margin-bottom: 80px;
+              &:after{
+                content: '';
+                display: block;
+                width: 150%;
+                height:100%;
+                position: absolute;
+                top:40px;
+                left:auto;
+                right:0;
+                z-index: -1;
+                background-color: $light;
+              }
+              .post-thumbnail{
+                position: relative;
+                max-width: 200%;
+                float: none;
+              }
+            }
+            &.right-image{
+              position: relative;
+              top:0;
+              right:0;
+              margin-bottom: 50px;
+              &:after{
+                content: '';
+                display: block;
+                width: 100%;
+                height:100%;
+                position: absolute;
+                top:40px;
+                right:-40px;
+                z-index: -1;
+                background-color: $light;
+              }
+              .post-thumbnail{
+                max-width: 100%;
+
+              }
+            }
+          }
+          div{
+            p.text{}
+            p.bold{}
+          }
+        }
+      }
+      blockquote{
+        p.italic{}
+      }
+    }
+  }
+}

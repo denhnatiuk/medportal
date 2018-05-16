@@ -523,3 +523,331 @@ $gray: #d9d9d9;
   }
 }
 //  END page about
+// page blog (category)
+.row.hero-header{
+  .container{
+    .hero-bg{}
+    .page-title{}
+    .page-title-sub{}
+  }
+}
+.row{
+  .container{
+    .main{
+      article.post{
+        .article-header{}
+        .meta{}
+        p.excerpt{
+          color: $gray;
+        }
+        .article-link{
+          color:$main;
+        }
+      }
+      .pagination{
+        li.active span{
+          background-color: $main;
+          border-color: $main;
+        }
+        li a{
+          background-color:  $gray;
+          color: #fff;
+        }
+      }
+    }
+    .primary-sidebar{
+      aside#search-2{
+        form.search-form{
+          label{
+            .screen-reader-text{}
+            input.search-field{
+              border:1px solid $gray;
+              color:#000;
+            }
+          }
+          .search-submit{
+            border:1px solid $gray;
+            border-left: 0;
+            background-color: #fff;
+            color: $gray;
+          }
+        }
+      }
+      aside#categories{
+        .widget-title{
+        }
+        .cat-list{
+          .cat-item{
+            position: relative;
+            a{
+              color:#000;
+            }
+            &:before{
+              content: '';
+              display: block;
+              position: absolute;
+              left:-2rem;
+              top:0.6rem;
+              width:1.5rem;
+              height: 1px;
+              border-bottom:1px solid $main;
+            }
+            .count{}
+          }
+        }
+      }
+      aside#recent-posts-2{
+        .widget-title{
+        }
+        ul{
+          li{
+            a{
+              color: #000;
+              img{}
+              .post-title{
+                color: #000;
+              }
+              .meta{
+                color: #000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// END page blog (category)
+// single-blog
+.row{
+  .container{
+    article.blog-post{
+      .row{
+        .section-header{
+          span{
+          }
+        }
+        .img-wrapper{
+
+          &.left-image{
+            &:after{
+              content: '';
+              display: block;
+              width: 150%;
+              height:70%;
+              position: absolute;
+              top:40px;
+              left:auto;
+              right:0;
+              z-index: -1;
+              background-color: $light;
+            }
+          }
+          &.right-image{
+            &:after{
+              content: '';
+              display: block;
+              width: 100%;
+              height:100%;
+              position: absolute;
+              top:-40px;
+              right:-40px;
+              z-index: -1;
+              background-color: $light;
+            }
+          }
+          .page-thumbnail{
+          }
+        }
+        div{
+          p.text{}
+          p.bold{}
+        }
+        .right-text-blog{
+          .section-header{
+          }
+          .text-list{}
+        }
+      }
+    }
+    blockquote{
+      color: $gray;
+      span.italic{
+        color: $light4;
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .row{
+    .container{
+      article.blog-post{
+        .row{
+          .section-header{}
+          .img-wrapper{
+            &.left-image{
+              .post-thumbnail{
+              }
+            }
+            &.right-image{
+              .post-thumbnail{
+              }
+            }
+          }
+          div{
+            p.text{}
+            p.bold{}
+          }
+          .right-text-blog{
+            .section-header{
+            }
+            .text-list{}
+          }
+        }
+      }
+      blockquote{
+        color: $gray;
+        span.italic{
+          color: $light4;
+        }
+      }
+    }
+  }
+}
+// END page single-blog
+// info page
+article.info{
+  .row:first-child{
+    .right-text{
+      .section-header{
+        span{}
+      }
+      .img-wrapper{
+        &.left-image{
+          &:after{
+            content: '';
+            display: block;
+            width: 100%;
+            height:100%;
+            position: absolute;
+            top:-40px;
+            left:40px;
+            right:0;
+            z-index: -1;
+            background-color: #ececf1;
+          }
+          .post-thumbnail{}
+        }
+      }
+      p.text{}
+      .btn-filled{
+        background-color: $main;
+        color: #fff;
+      }
+    }
+  }
+  .row2{
+    .left-text{
+      .section-header{
+        span{}
+      }
+      .img-wrapper{
+        &.right-image{
+          .post-thumbnail{}
+        }
+      }
+      p.text{}
+      .btn-filled{}
+    }
+  }
+  .row3{
+    .left-text{
+      .section-header{
+        span{}
+      }
+      .img-wrapper{
+        &.right-image{
+          .post-thumbnail{}
+        }
+      }
+      .text{}
+      .text-list{
+        color: $main;
+        .text-list-item{
+          color:#000;
+        }
+      }
+    }
+    .right-text{
+      .section-header{
+        span{}
+      }
+      .img-wrapper{
+        &.left-image{
+          .post-thumbnail{}
+        }
+      }
+      p.text{}
+      .btn-filled{
+
+      }
+    }
+  }
+  .row:nth-child(4){
+    .right-text{
+      .section-header{
+        span{}
+      }
+      .img-wrapper{
+        &.left-image{
+          .post-thumbnail{}
+        }
+      }
+      p.text{}
+      .section-header-sub{}
+      p.bold{}
+    }
+  }
+  .row:nth-child(5).hidden-xs{
+    .full-text{
+      .section-header{}
+      .row{
+        div{
+          .text-list{
+            .text-list-item{
+              .text{}
+            }
+          }
+          &.paddingless{}
+        }
+      }
+    }
+    .left-text{
+      .section-header{}
+      .right-image{
+        .post-thumbnail{}
+      }
+      p.text{}
+      ol.textlist{
+        .text-list-item{
+          .text{}
+        }
+      }
+    }
+  }
+  .row:nth-child(6){
+    .section-header{}
+    .accordion-wrapper{
+      .accordion-item{
+        .accordion-switcher{}
+        .accordion-label{
+          .accordion-item-header{}
+        }
+        .accordion-item-description{
+          .text{}
+        }
+      }
+    }
+  }
+}
+// END info page
