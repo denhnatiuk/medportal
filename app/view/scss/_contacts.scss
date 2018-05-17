@@ -1,0 +1,57 @@
+.page-contacts{
+  .hero-header{
+    margin-bottom: 0;
+  }
+}
+.row.contacts{
+  margin-bottom: 0;
+  #map{
+    // top:-80px;
+    height:484px;
+  }
+  .container{
+    position: relative;
+    .contacts-wrapper.overlay{
+      position: absolute;
+      right: 7%;
+      top:-400px;
+      width:340px;
+      z-index: 5;
+      background-color: #fff;
+      padding:72px 64px;
+      .contacts-header{
+        font-family: "ProximaNova-Semibold", Georgia, sans-serif;
+        font-size: 1.12rem;
+        line-height: 1.666rem;
+      }
+      .main-contacts-list{
+        list-style-type: none;
+        .main-contacts-item{
+          padding-bottom: 15px;
+          & .address{
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            font-weight: 400;
+            line-height: 1.666rem;
+            margin: 1rem 0 0 0;
+            text-indent: -2rem;
+            &:before{
+              font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f3c5";color:#009ee0;margin-right: 1rem;
+            }
+          }
+          & .tel{
+            display: block;
+            font-family: "ProximaNova-Regular", Georgia, sans-serif;
+            font-size: 0.8889rem;
+            font-weight: 400;
+            line-height: 1.666rem;
+            text-indent: -2rem;
+            &:before{
+              font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f095";color:#009ee0;margin-right: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
