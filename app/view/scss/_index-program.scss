@@ -43,8 +43,10 @@
       }
       .program-block{
         overflow-x: hidden;
+        overflow-y: visible;
         padding: 0;
         &.program-bg{
+          overflow-y: visible;
           height: 560px;
           background: linear-gradient(
                         rgba(0, 158, 224, 0.5),
@@ -70,7 +72,7 @@
         .btn-filled{
           display: block;
           padding: 1rem 2rem;
-          margin:2rem auto;
+          margin:1.5rem auto;
           border:0;
           border-radius: 1.5rem;
           width:250px;

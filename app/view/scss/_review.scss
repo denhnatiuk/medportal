@@ -1,0 +1,193 @@
+.page-review{
+  .review-wrapper{
+    .review-list{
+      .review-item{
+        position: relative;
+        display: block;
+        width:100%;
+        margin: 118px 0;
+        padding: 22px 34px;
+        -webkit-box-shadow: 0px 0px 60px -12px rgba(236,236,241,1);
+        -moz-box-shadow: 0px 0px 60px -12px rgba(236,236,241,1);
+        box-shadow: 0px 0px 60px 0px rgba(236,236,241,1);
+        .user-meta{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          position: absolute;
+          height: 200px;
+          left:37px;
+          top:-59px;
+          .user-icon{
+            padding: 28px 31px;
+            background-color: #009ee0;
+            border-radius: 50%;
+            svg{
+              width: 56px;
+              height:56px;
+              fill: #fff;
+            }
+          }
+          .user-name{align-self: flex-start;}
+          .rate{
+            align-self: flex-start;
+            .glyphicon-star{
+              color: #e6c327;
+            }
+          }
+        }
+        .img-wrapper{
+          img.before-after{
+            margin-left: 200px;
+            margin-bottom: 44px;
+          }
+        }
+        .meta{
+          position: absolute;
+          top:22px;
+          right:53px;
+          .date{
+            color: #aaa;
+          }
+        }
+        .text{}
+        .btn-filled{
+          display: block;
+          margin-top: 33px;
+          padding: 1rem 2rem;
+          margin:2rem 0;
+          border:0;
+          border-radius: 1.5rem;
+          width:250px;
+          max-width:50%;
+          text-align: center;
+          background-color: #009ee0;
+          border-radius: 1.5rem;
+          color:#fff;
+        }
+      }
+    }
+    .pagination{
+      float: right;
+      margin-top: 0;
+      margin-bottom: 50px;
+      li span{
+        margin-right: 5px;
+        border-radius: 0;
+      }
+      li.active span{
+        background-color: #009ee0;
+        border-color: #009ee0;
+      }
+      li a{
+        margin-right: 5px;
+        background-color: #d9d9d9;
+        color: #fff;
+      }
+    }
+  }
+}
+@media screen and (max-width:1024px) {
+  .page-review{
+    margin-bottom:0;
+    .review-wrapper{
+      .review-list{
+        margin:0 -15px;
+        .review-item{
+          position: relative;
+          display: block;
+          width:100%;
+          margin: 118px 0;
+          padding: 0 15px 22px 15px;
+          -webkit-box-shadow: 0px 0px 60px -12px rgba(236,236,241,1);
+          -moz-box-shadow: 0px 0px 60px -12px rgba(236,236,241,1);
+          box-shadow: 0px 0px 60px 0px rgba(236,236,241,1);
+          &:last-child{
+            margin:  0 0 22px 0;
+            &:btn-filled{
+              margin-bottom:0;
+            }
+          }
+          .user-meta{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            height: 200px;
+            width:60%;
+            left:15px;
+            top:-59px;
+            .user-icon{
+              padding: 28px 31px;
+              background-color: #009ee0;
+              border-radius: 50%;
+              align-self: flex-end;
+              svg{
+                width: 56px;
+                height:56px;
+                fill: #fff;
+              }
+            }
+            .user-name{align-self: flex-start;}
+            .rate{
+              align-self: flex-start;
+              .glyphicon-star{
+                color: #e6c327;
+              }
+            }
+          }
+          .img-wrapper{
+            img.before-after{
+              margin-top: 160px;
+              margin-left: 0;
+              margin-bottom: 44px;
+            }
+          }
+          .meta{
+            position: absolute;
+            top:78px;
+            right:15px;
+            .date{
+              color: #aaa;
+            }
+          }
+          .text{}
+          .btn-filled{
+            display: block;
+            margin-top: 33px;
+            padding: 1rem 2rem;
+            margin:2rem 0;
+            border:0;
+            border-radius: 1.5rem;
+            width:250px;
+            max-width:70%;
+            text-align: center;
+            background-color: #009ee0;
+            border-radius: 1.5rem;
+            color:#fff;
+          }
+        }
+      }
+      .pagination{
+        float: left;
+        margin-top: 0;
+        margin-bottom: 50px;
+        li span{
+          margin-right: 5px;
+          border-radius: 0;
+        }
+        li.active span{
+          background-color: #6ec8ed;
+          border-color: #6ec8ed;
+        }
+        li a{
+          margin-right: 5px;
+          background-color: #d9d9d9;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

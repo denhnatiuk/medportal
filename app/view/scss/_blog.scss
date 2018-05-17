@@ -101,7 +101,15 @@
 @media screen and (max-width:1024px) {
   .row.hero-header{
     .container{
-      .hero-bg{}
+      .hero-bg{
+        left:0;
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        transform: scale(-1, 1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+      }
       .page-title{}
       .page-title-sub{}
     }
